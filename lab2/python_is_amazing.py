@@ -6,7 +6,7 @@ pygame.init()
 screen = pygame.display.set_mode((300, 200))
 #плакат
 rect(screen, (0, 255, 0), (0, 0, 300, 20))
-font = pygame.font.SysFont("arial", 20, bold=True)
+font = pygame.font.SysFont("Times New Roman", 20, bold=True)
 text = font.render("PYTHON is AMAZING", True, (0, 0, 0))
 screen.blit(text, (50, 0))
 #arms
@@ -18,6 +18,9 @@ circle(screen, (210, 100, 0), (150, 200), 60)
 
 #cap
 circle(screen, (255, 0, 255), (150, 60), 40)
+font = pygame.font.SysFont("Times New Roman", 10, bold=True)
+text = font.render("tractor", True, (255, 255, 255))
+screen.blit(text, (135, 30))
 rect(screen, (255, 0, 255), (150, 60, 50, 5))
 rect(screen, (0, 0, 0), (150, 60, 50, 5), 1)
 
