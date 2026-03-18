@@ -103,7 +103,14 @@ def draw_hare(surface, x, y, width, height, color):
   for eye_x in (x - width // 4, x + width // 4):
       draw_eyes(surface, eye_x, eye_y, eye_size)
 background(screen,(255, 200, 200),400, 400)
+draw_hare(screen, 25, 200, 25, 50, (50, 50, 50))
+draw_hare(screen, 375, 200, 25, 50, (50, 50, 50))
+draw_hare(screen, 50, 200, 50, 100, (100, 100, 100))
+draw_hare(screen, 350, 200, 50, 100, (100, 100, 100))
+draw_hare(screen, 100, 200, 100, 200, (150, 150, 150))
+draw_hare(screen, 300, 200, 100, 200, (150, 150, 150))
 draw_hare(screen, 200, 200, 200, 400, (200, 200, 200))
+
 pygame.display.update()
 clock = pygame.time.Clock()
 finished = False
